@@ -7,7 +7,7 @@ menu[0][1] = "SETTINGS";
 menu[0][2] = "CONTROLS";
 menu[0][3] = "CREDITS";
 menu[0][4] = "QUIT"; 
-menu[0][5] = "DEV MENU";
+//menu[0][5] = "DEV MENU";
 
 // Area selection menu - using a different structure
 menu[1][0] = "Area Select"; // Title (non-selectable)
@@ -41,7 +41,7 @@ menu[3][6] = global.grapple_keybind_text;
 menu[3][7] = "Pause: Backspace";
 menu[3][8] = "Back";
 
-// Test Unlock System Screen
+/* Test Unlock System Screen
 menu[4][0] = "Which area?"; // Title (non-selectable)
 menu[4][1] = "Area 1";
 menu[4][2] = "Area 2";
@@ -55,6 +55,7 @@ menu[4][9] = "Area 8.2";
 menu[4][10] = "Area 8.3";
 menu[4][11] = "Area EX-1";
 menu[4][12] = "Area EX-2";
+*/
 
 // Clear Save Data Prompt
 menu[5][0] = "Are you sure?"

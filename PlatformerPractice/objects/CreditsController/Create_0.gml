@@ -4,7 +4,7 @@
 fade_alpha = 0;
 fade_speed = 0.025;
 return_to_menu = false;
-alarm[0] = 180;
+alarm[0] = 60;
 
 credits = [
     {
@@ -29,7 +29,7 @@ credits = [
             "Tim Beek (itch.io)",
             "Of Far Different Nature (itch.io)",
             "Redlight Chill (itch.io)",
-            "nojisuma (Pixabay)"
+            "nojisuma (pixabay)"
         ]
     },
 
