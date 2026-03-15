@@ -6,6 +6,9 @@ fade_speed = 0.025;
 return_to_menu = false;
 alarm[0] = 60;
 
+credit_scroll = 0;
+credit_scroll_speed = 8;
+
 credits = [
     {
         title: "Credits",
@@ -44,7 +47,7 @@ credits = [
     },
 
     {
-        title: "Credits theme:",
+        title: "Credits Theme:",
         scale: 0.75,
         entries: [
             "Coffee Beans by Redlight Chill"
