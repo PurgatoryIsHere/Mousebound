@@ -25,5 +25,10 @@ if(global.checkpoint_x == 1872 && global.checkpoint_y == 448 && respawn_check)
 
 DropAbility = function()
 {
+	if(global.grappleUnlock)
+	{
+		return;
+	}
+	
 	instance_create_layer(2672, 448, "Instances", O_GrappleUnlock);
 }

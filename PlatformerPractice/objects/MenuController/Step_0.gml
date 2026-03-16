@@ -313,66 +313,57 @@ if(sub_menu == 2)
     audio_group_set_gain(audiogroup_sfx, global.master_volume * global.sfx_volume, 0);
 }
 
-// Keybind menu
 if(waiting_for_input)
 {
     var new_keybind = keyboard_lastkey;
 
-    // Ignore Enter (since it was the selection key)
+    // Ignore Enter, R/r, and Backspace
     if(new_keybind != vk_enter && new_keybind != ord("R") && new_keybind != ord("r") && new_keybind != vk_backspace)
     {
-        switch(locked_index)
+        var key_name = keycode_to_string(new_keybind);
+
+        if(key_name != undefined)
         {
-            case 1: 
-			
-                global.left_key = new_keybind;
-                global.left_keybind_text = "Move Left: " + keycode_to_string(new_keybind);
-				menu[3][1] = global.left_keybind_text;
-				
-            break;
-			
-			case 2: 
-			
-                global.right_key = new_keybind;
-                global.right_keybind_text = "Move Right: " + keycode_to_string(new_keybind);
-				menu[3][2] = global.right_keybind_text;
-				
-            break;
-			
-			case 3: 
-			
-                global.jump_key = new_keybind;
-                global.jump_keybind_text = "Jump: " + keycode_to_string(new_keybind);
-				menu[3][3] = global.jump_keybind_text;
-				
-            break;
-			
-			case 4: 
-			
-                global.dash_key = new_keybind;
-                global.dash_keybind_text = "Dash: " + keycode_to_string(new_keybind);
-				menu[3][4] = global.dash_keybind_text;
-				
-            break;
-			
-			case 5: 
-			
-                global.gp_key = new_keybind;
-                global.gp_keybind_text = "Ground Pound: " + keycode_to_string(new_keybind);
-				menu[3][5] = global.gp_keybind_text;
-				
-            break;
-			
-			case 6: 
-	
-                global.grapple_key = new_keybind;
-                global.grapple_keybind_text = "Grapple: " + keycode_to_string(new_keybind);
-				menu[3][6] = global.grapple_keybind_text;
-				
-            break;
+            switch(locked_index)
+            {
+                case 1:
+                    global.left_key = new_keybind;
+                    global.left_keybind_text = "Move Left: " + key_name;
+                    menu[3][1] = global.left_keybind_text;
+                break;
+
+                case 2:
+                    global.right_key = new_keybind;
+                    global.right_keybind_text = "Move Right: " + key_name;
+                    menu[3][2] = global.right_keybind_text;
+                break;
+
+                case 3:
+                    global.jump_key = new_keybind;
+                    global.jump_keybind_text = "Jump: " + key_name;
+                    menu[3][3] = global.jump_keybind_text;
+                break;
+
+                case 4:
+                    global.dash_key = new_keybind;
+                    global.dash_keybind_text = "Dash: " + key_name;
+                    menu[3][4] = global.dash_keybind_text;
+                break;
+
+                case 5:
+                    global.gp_key = new_keybind;
+                    global.gp_keybind_text = "Ground Pound: " + key_name;
+                    menu[3][5] = global.gp_keybind_text;
+                break;
+
+                case 6:
+                    global.grapple_key = new_keybind;
+                    global.grapple_keybind_text = "Grapple: " + key_name;
+                    menu[3][6] = global.grapple_keybind_text;
+                break;
+            }
         }
-		
+
         waiting_for_input = false;
     }
 }
-

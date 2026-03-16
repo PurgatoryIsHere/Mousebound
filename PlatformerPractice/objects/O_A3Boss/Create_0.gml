@@ -119,6 +119,11 @@ TakeDamage = function(damage)
 
 DropAbility = function()
 {
+	if(global.groundPoundUnlock)
+	{
+		return;
+	}
+	
 	instance_create_layer(320, 928, "Instances", O_GroundPoundUnlock);
 }
 

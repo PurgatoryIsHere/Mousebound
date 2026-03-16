@@ -1,6 +1,5 @@
 TriggerEvent = function()
 {
-	instance_deactivate_object(O_Timer);
-	audio_stop_sound(_759501__gammagool__tick_tock_dry);
+	O_Timer.goal_achieved = true;
 	instance_destroy(self);
 }

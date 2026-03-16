@@ -77,56 +77,22 @@ locked_index = 0;
 function keycode_to_string(key) 
 {
     switch (key) 
-	{
-        // Common keys
-        case vk_space:      return "Space";
-        case vk_enter:      return "Enter";
-        case vk_shift:      return "Shift";
-        case vk_control:    return "Ctrl";
-        case vk_alt:        return "Alt";
-        case vk_escape:     return "Escape";
-        case vk_backspace:  return "Backspace";
-        case vk_tab:        return "Tab";
-        case vk_left:       return "Left Arrow";
-        case vk_right:      return "Right Arrow";
-        case vk_up:         return "Up Arrow";
-        case vk_down:       return "Down Arrow";
-
-        // Function keys
-        case vk_f1: return "F1";
-        case vk_f2: return "F2";
-        case vk_f3: return "F3";
-        case vk_f4: return "F4";
-        case vk_f5: return "F5";
-        case vk_f6: return "F6";
-        case vk_f7: return "F7";
-        case vk_f8: return "F8";
-        case vk_f9: return "F9";
-        case vk_f10: return "F10";
-        case vk_f11: return "F11";
-        case vk_f12: return "F12";
-
-        // Printable characters (letters/numbers)
-        default:
-		
-            if (key >= ord("0") && key <= ord("9")) 
-			{
-                return string(chr(key));
-            }
-			
-            if (key >= ord("A") && key <= ord("Z")) 
-			{
-                return string(chr(key));
-            }
-			
-            if (key >= ord("a") && key <= ord("z")) 
-			{
-                return string(chr(key));
-            }
+    {
+        case vk_space: return "Space";
+		case vk_shift: return "Shift";
+		case vk_control: return "Ctrl";
+        case vk_left: return "Left Arrow";
+        case vk_right: return "Right Arrow";
+        case vk_up: return "Up Arrow";
+        case vk_down: return "Down Arrow";
     }
+
+    // Allow only A–Z
+    if (key >= ord("A") && key <= ord("Z")) 
+	{
+        return string(chr(key));
+    }
+
+    // Otherwise, return undefined
+    return undefined;
 }
-
-
-
-
-

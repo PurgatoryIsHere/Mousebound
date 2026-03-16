@@ -35,5 +35,10 @@ TakeDamage = function(damage)
 
 DropAbility = function()
 {
+	if(global.doubleJumpUnlock)
+	{
+		return;
+	}
+	
 	instance_create_layer(319, 623, "Instances", O_DoubleJumpUnlock);
 }

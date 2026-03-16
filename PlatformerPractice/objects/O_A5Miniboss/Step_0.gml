@@ -4,8 +4,15 @@
 if (place_meeting(x, y, O_Player) && O_Player.beingFired)
 {
 	//move to next phase
-	O_Player.beingFired = false
 	phase += 1
+	
+	with(O_Player)
+	{
+		beingFired = false;
+		input_enabled = true;
+		state = stateFree;
+		x_speed = 0;
+	}
 	
 	show_debug_message(phase)
 	show_debug_message(next_site.phase)

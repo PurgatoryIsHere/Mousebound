@@ -9,8 +9,7 @@ if(type = "")
 		sprite_index = S_Timer_On
 		timer_going = true
 		alarm[0] = room_speed * set_timer
-	
-		instance_deactivate_object(O_TimerGate)
+		destroy_gates();
 	}
 }
 
@@ -27,8 +26,11 @@ else if(type = "enemy")
 	
 	if(timer_going && !instance_exists(O_EnemyParent))
 	{
-		instance_deactivate_object(O_TimerGate);
+		goal_achieved = true;
+		timer_going = false;
 		audio_stop_sound(_759501__gammagool__tick_tock_dry);
+		alarm[1] = -1;
+		destroy_gates();
 		instance_deactivate_object(self);
 	}
 }
@@ -44,6 +46,14 @@ if(timer_going)
 	{
 		time_remaining = alarm[1] / room_speed;
 	}
+}
+
+if(goal_achieved)
+{
+	timer_going = false;
+	audio_stop_sound(_759501__gammagool__tick_tock_dry);
+	alarm[0] = -1;
+	instance_deactivate_object(self);
 }
 
 // Screen white-out effects
