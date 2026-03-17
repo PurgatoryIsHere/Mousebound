@@ -15,6 +15,12 @@ credits = [
         scale: 1,
         entries: []
     },
+	
+	{
+        title: "Mousebound",
+        scale: 0.8,
+        entries: []
+    },
 
     {
         title: "Development:",
