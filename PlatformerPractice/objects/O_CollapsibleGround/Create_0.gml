@@ -7,3 +7,8 @@ shake_magnitude = 2;
 
 x_origin = x;
 y_origin = y;
+
+if(sprite_index == S_TopCollapsibleBlock && (place_meeting(x, y - sprite_height, O_Ground) || place_meeting(x, y - sprite_height, O_HiddenWall)))
+{
+	sprite_index = S_CollapsibleBlock
+}

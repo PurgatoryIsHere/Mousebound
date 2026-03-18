@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_CollapsibleBlock",
-    "path":"sprites/S_CollapsibleBlock/S_CollapsibleBlock.yy",
+    "name":"S_TopCollapsibleBlock",
+    "path":"sprites/S_TopCollapsibleBlock/S_TopCollapsibleBlock.yy",
   },
   "spriteMaskId":null,
   "visible":true,

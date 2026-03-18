@@ -88,6 +88,7 @@ else
 	
 		else if(move_timer == 30) 
 		{
+			SpecialMoveDirectionChange();
 			audio_play_sound(_706679__sadiquecat__low_whoosh_bamboo_4, 1, false)
 			y_speed = -5;
 			doubleJump = false;

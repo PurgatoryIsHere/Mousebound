@@ -3,6 +3,8 @@
 
 var move_type = irandom(3);
 
+SpecialMoveDirectionChange();
+
 if (move_type = 0) 
 {
 	jump = true;

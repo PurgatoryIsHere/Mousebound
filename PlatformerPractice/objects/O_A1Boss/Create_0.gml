@@ -33,6 +33,21 @@ TakeDamage = function(damage)
 	boss_i_frame_timer = 32;
 }
 
+SpecialMoveDirectionChange = function()
+{
+	if(O_Player.x < x)
+	{
+		dir = -1;
+		image_xscale = dir * 1.5;
+	}
+
+	else
+	{
+		dir = 1;
+		image_xscale = dir * 1.5;
+	}
+}
+
 DropAbility = function()
 {
 	if(global.doubleJumpUnlock)

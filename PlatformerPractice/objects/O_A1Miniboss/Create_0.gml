@@ -47,3 +47,18 @@ TakeDamage = function(damage) // Basic damage calculation; aspects can be change
 	
 	boss_i_frame_timer = 32; // Standard amount of i-frames; can be changed for each boss
 }
+
+SpecialMoveDirectionChange = function()
+{
+	if(O_Player.x < x)
+	{
+		dir = -1;
+		image_xscale = dir * 1.5;
+	}
+
+	else
+	{
+		dir = 1;
+		image_xscale = dir * 1.5;
+	}
+}
