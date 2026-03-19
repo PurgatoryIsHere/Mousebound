@@ -141,7 +141,7 @@ stateFree = function()
 			if(on_wall != 0 && wall_sliding)
 			{
 				x_speed = on_wall * 4;
-				y_speed = -4;
+				y_speed = -4.75;
 				movement_lock_timer = 10;
 			}
 		

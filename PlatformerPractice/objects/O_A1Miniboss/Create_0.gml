@@ -53,12 +53,12 @@ SpecialMoveDirectionChange = function()
 	if(O_Player.x < x)
 	{
 		dir = -1;
-		image_xscale = dir * 1.5;
+		image_xscale = dir * 2;
 	}
 
 	else
 	{
 		dir = 1;
-		image_xscale = dir * 1.5;
+		image_xscale = dir * 2;
 	}
 }

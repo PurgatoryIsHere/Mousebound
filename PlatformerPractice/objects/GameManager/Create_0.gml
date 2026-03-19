@@ -58,6 +58,7 @@ global.respawn_check = true;
 // Area 7 Variables
 global.area7_key_pieces_collected = 0;
 global.area7_collected_key_piece = [false, false, false];
+global.area7_hub_checkpoint_active = false;
 
 // Area EX Variables
 global.returning_from_EX_1 = false;
