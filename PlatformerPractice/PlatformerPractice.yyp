@@ -338,6 +338,7 @@
     {"id":{"name":"S_TopSpike","path":"sprites/S_TopSpike/S_TopSpike.yy",},},
     {"id":{"name":"S_Warning","path":"sprites/S_Warning/S_Warning.yy",},},
     {"id":{"name":"sky_1","path":"sprites/sky_1/sky_1.yy",},},
+    {"id":{"name":"studio_decaf_splashart","path":"sprites/studio_decaf_splashart/studio_decaf_splashart.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

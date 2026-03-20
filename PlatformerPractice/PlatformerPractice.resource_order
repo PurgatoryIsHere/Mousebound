@@ -283,5 +283,6 @@
     {"name":"S_TopGround","order":15,"path":"sprites/S_TopGround/S_TopGround.yy",},
     {"name":"S_TopSpike","order":3,"path":"sprites/S_TopSpike/S_TopSpike.yy",},
     {"name":"sky_1","order":6,"path":"sprites/sky_1/sky_1.yy",},
+    {"name":"studio_decaf_splashart","order":20,"path":"sprites/studio_decaf_splashart/studio_decaf_splashart.yy",},
   ],
 }
